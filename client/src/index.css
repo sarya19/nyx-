@@ -1,0 +1,31 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+html,
+body,
+#root {
+  min-height: 100%;
+}
+
+body {
+  @apply bg-paper text-ink antialiased;
+}
+
+button,
+input,
+select,
+textarea {
+  @apply outline-none;
+}
+
+.nyx-cursor-label {
+  color: #fff;
+  font-size: 10px;
+  line-height: 16px;
+  padding: 0 5px;
+  border-radius: 3px 3px 3px 0;
+  pointer-events: none;
+  white-space: nowrap;
+  font-family: ui-sans-serif, system-ui, sans-serif;
+}
